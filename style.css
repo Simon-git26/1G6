@@ -1,0 +1,11 @@
+input:required:focus:valid,
+input[pattern]:focus:valid {
+  border-color: #b3f3a2;
+  box-shadow: 0 0 3px #b3f3a2;
+}
+
+input:required:focus:invalid,
+input[pattern]:focus:invalid {
+  border-color: #f79c9c;
+  box-shadow: 0 0 3px #f79c9c;
+}

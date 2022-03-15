@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/89272632ee.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <title>Taxi Form</title>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header></header>
+
+
+
+
+
+
+    <!-- Main -->
+    <main>
+
+        <div class="container">
+            <form>
+
+
+                <!-- Champs ID allant de 10 à 9999                                                          OK-->
+                <div class="form-group mb-3">
+                  <label for="ID">Identifiant</label>
+                  <input type="number" placeholder="Choisir son ID" class="form-control" id="ID" aria-describedby="emailHelp" min="10" max="9999" required>
+                </div>
+
+                <!-- Champs Nom 4 caract minimum sans caract spéciaux MAIS Nombre et chiffre oblijé          OK-->
+                <div class="form-group mb-3">
+                  <label for="NAME">Nom</label>
+                  <input type="text" class="form-control" id="NAME" placeholder="Votre Nom" pattern="[a-zA-Z0-9]{4,50}" required>
+                </div>
+
+
+
+
+
+
+                <!-- Tel Client 1 required // Tel client 2 facultatif             5*2 chiffre avec espace et pas tiré-->
+                <div class="form-group mb-3">
+                    <label for="TEL1">Tel Client 1</label>
+                    <input type="tel" class="form-control validate" id="TEL1" placeholder="Votre Tel Client" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="TEL2">Tel Client 2</label>
+                    <input type="tel" class="form-control" id="TEL2" placeholder="Votre Tel Client 2" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}">
+                </div>
+
+
+
+
+                <!-- Tel Ecoute                              5*2 chiffre avec espace et pas tiré-->
+                <div class="form-group mb-3">
+                    <label for="ECOUTE">Tel Ecoute</label>
+                    <input type="tel" class="form-control validate" id="ECOUTE" placeholder="Tel Ecoute" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
+                </div>
+
+
+
+
+                <!-- Tel General                             5*2 chiffre avec espace et pas tiré-->
+                <div class="form-group mb-3">
+                    <label for="GENERAL">Tel General</label>
+                    <input type="tel" class="form-control validate" id="GENERAL" placeholder="Tel General" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
+                </div>
+
+
+
+
+                <button type="submit" onclick="create()" class="btn btn-primary mt-4">Soumettre !</button>
+              </form>
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer></footer>
+
+
+    <script src="app.js"></script>  
+  </body>
+</html>
