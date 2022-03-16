@@ -4,8 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap 5-->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--DataTable css-->
+    <link rel="stylesheet" href="./node_modules/datatables.net-bs5/css/dataTables.bootstrap5.css">
+    <!-- jQuerry-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!--DataTable js-->
+    <script src="./node_modules/datatables.net-bs5/js/dataTables.bootstrap5.js"></script>
+    <!--CDN Datatable-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.js"></script>
+
+
+    
+
     <title>Taxi Form</title>
   </head>
 
@@ -28,7 +41,7 @@
           
           <div class="container">
 
-              <form id="inscription">
+              <form id="inscription" style="width: 50%; margin: auto;">
                   <!-- Champs ID allant de 10 à 9999-->
                   <div class="form-group mb-3">
                     <label for="ID">Identifiant *</label>
@@ -74,12 +87,74 @@
           </div>
           
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">regergegrergergeergerergegregrergegregr</div>
+
+        <!-- Deuxieme Onglet -->
+        <div class="tab-pane fade d-flex justify-content-center" style="width: 100%;" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          
+          <table id="table_id" class="display">
+            <thead>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Profession</th>
+                <th>Quartier</th>
+                <th>Age</th>
+                <th>Ville</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                  <td>simon</td>
+                  <td>toto</td>
+                  <td>maitre nageur</td>
+                  <td>eymeux</td>
+                  <td>25</td>
+                  <td>oublié</td>
+                </tr>
+
+                <tr>
+                  <td>simon</td>
+                  <td>toto</td>
+                  <td>proffesseur</td>
+                  <td>eymeux</td>
+                  <td>25</td>
+                  <td>oublié</td>
+                </tr>
+
+                <tr>
+                  <td>simon</td>
+                  <td>toto</td>
+                  <td>interim</td>
+                  <td>eymeux</td>
+                  <td>25</td>
+                  <td>oublié</td>
+                </tr>
+
+                <tr>
+                  <td>bernar</td>
+                  <td>tapi</td>
+                  <td>cycliste</td>
+                  <td>eymeux</td>
+                  <td>25</td>
+                  <td>perdu</td>
+                </tr>
+
+                <tr>
+                  <td>titi</td>
+                  <td>toto</td>
+                  <td>boulanger</td>
+                  <td>perdu</td>
+                  <td>30</td>
+                  <td>oublié</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
       </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!--Bootstrap 5 js-->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--Fichier Javascript-->
     <script src="app.js"></script> 
 
     </body>

@@ -23,3 +23,6 @@ document.getElementById("inscription").addEventListener("submit", function (e) {
     alert("Formulaire envoyé !");
   }
 });
+
+// DataTable
+$("#table_id").DataTable({});
