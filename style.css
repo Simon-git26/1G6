@@ -9,3 +9,24 @@ input[pattern]:focus:invalid {
   border-color: #f79c9c;
   box-shadow: 0 0 3px #f79c9c;
 }
+
+.perso {
+  background: floralwhite;
+  padding: 15px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 2px 3px 3px #adafac;
+}
+
+.perso2 {
+  border-radius: 10px 10px 0px 0px;
+  background: floralwhite;
+  box-shadow: 2px 3px 3px #adafac;
+}
+
+.dataTables_wrapper {
+  width: 50%;
+  margin: auto;
+  background-color: floralwhite;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+}

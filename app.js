@@ -14,28 +14,21 @@ function formAjax(res) {
     },
     dataType: "json",
 
-    success: function (response) {
-      console.log(response);
-      alert("Formulaire envoyé !");
-    },
+    success: onResult,
   });
 }
 
-/*request.onload = function () {
-  var retourServeur = request.response;
-};
+function onResult(response) {
+  //le cham retour est === OK
+  if (response.retour === "OK") {
+    alert("succès");
+  }
 
-//le cham retour est === OK
-if (retourServeur.retour === "OK") {
-  alert("succès");
+  // Le champs message === KO
+  if (response.retour === "KO") {
+    alert("Erreur" + response.message);
+  }
 }
-
-// Le champs message === KO
-const message = "Erreur écriture en Base de données";
-
-if (retourServeur.retour === "KO") {
-  alert("Erreur" + message);
-}*/
 
 // DataTable
 $("#table_id").DataTable({});
